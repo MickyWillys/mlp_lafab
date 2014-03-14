@@ -1,0 +1,72 @@
+= render bandeau
+.slide.orange
+  .row
+    #annonce.small-centered.large-centered
+      %img{height: "200", src: "logo_fabriq_blanc.png", width: "200"}/
+      %p.grand Bienvenue sur le Réseau de Compétences Solidaires de La Fabriq
+      %p.moyen Pour mieux vous accueillir, nous rebatissons notre site
+    %a{href: "#video"}
+      %img#link_to_next_page{alt: "Some Image", height: "125", src: "TACHEdeSCROLL_GOOD.png", width: "125"}/
+#video.slide.vert
+  .row
+    .small-12.large-6.large-centered.columns
+      .flex-video
+        %iframe{allowfullscreen: "", frameborder: "0", height: "50%", mozallowfullscreen: "", src: "http://player.vimeo.com/video/35804890?title=0&byline=0&portrait=0", webkitallowfullscreen: "", width: "60%"}
+    .small-12.large-8.large-centered.columns
+      %p.grand Découvrez nous en 5min
+    %a{href: "#fabcompetences"}
+      %img#link_to_next_page{alt: "Some Image", height: "125", src: "TACHEdeSCROLL_GOOD.png", width: "125"}/
+#fabcompetences.slide.orange
+  .row
+    .small-centered.large-centered
+      %p.grand Venez échanger
+      %p.moyen et
+      %p.grand valoriser vos compétences
+      %a#lien{"data-tooltip" => " Cliquez pour afficher le Google Map.", href: "http://goo.gl/maps/loHLb"}
+        #deuxieme_partie
+          %p.moyen tous les seconds vendredis du mois à partir de 18h30
+          %p.moyen dans les murs du Centre social La 20ème Chaise,
+          %p.moyen Métro Père-Lachaise.
+          %img{alt: "Some Image", height: "60", src: "map_white.png", target: "_blank", width: "60"}/
+    %a{href: "#reseau_sociaux"}
+      %img#link_to_next_page{alt: "Some Image", height: "125", src: "TACHEdeSCROLL_GOOD.png", width: "125"}/
+#reseau_sociaux.slide.vert
+  .row
+    #logo-RS.small-12.large-8.large-centered.columns
+      .row.collapse
+        #logo-rs1.small-6.columns
+          %a{href: "https://www.facebook.com/lafabriq20"}
+            %img{height: "100", src: "Logo_FACEBOOK.png", width: "100"}/
+        #logo-rs2.small-6.columns
+          %a{href: "https://twitter.com/lafabriqnet"}
+            %img{height: "100", src: "Logo_TWITTER.png", width: "100"}/
+    #rs-texte.small-centered.large-centered
+      %p.grand Suivez notre actualité
+      %p.moyen et
+      %p.grand rejoignez notre communauté
+    .small-12.large-6.large-centered.columns.box
+      %p.trespetit Inscription à la newsletter
+      .row.collapse
+        .small-10.columns
+          %form{action: "/email", method: "post"}
+            %input{name: "email", placeholder: " @ Laissez nous votre email", type: "text"}/
+        .small-2.columns
+          %button.button.postfix{name: "submit", type: "submit"} Valider
+    %a{href: "#projet_associatif"}
+      %img#link_to_next_page{alt: "Some Image", height: "125", src: "TACHEdeSCROLL_GOOD.png", width: "125"}/
+#projet_associatif.slide.orange
+  .row
+    .small-centered.large-centered
+      %p.grand Explorez notre univers
+    #rapport.small-centered.large-centered
+      %a{href: "LaFabriq_ProjetAssociatif_220913.pdf", target: "_blank"}
+        %img{height: "245", src: "image_rapport.png", width: "174"}/
+    %a{href: "#contact"}
+      %img#link_to_next_page{alt: "Some Image", height: "125", src: "TACHEdeSCROLL_GOOD.png", width: "125"}/
+#contact.slide.vert
+  .row
+    #rdv.small-centered.large-centered
+      %p.grand Prenez rendez-vous
+      %p.grand contact-info@lafabriq.net
+    %a{href: "#annonce"}
+      %img#link_to_next_page{alt: "Some Image", height: "125", src: "TACHEdeSCROLL_GOOD.png", width: "125"}/

@@ -9,8 +9,8 @@ class SkillsController < ApplicationController
 	end
 
 
-	def create
-		@skill = Skill.create(skills_params)
+	def update
+		@skill = Skill.create(skill_params)
 		if @skill.save
 			flash[:success] = "skills sauvegardées!"
 			redirect_to root_url

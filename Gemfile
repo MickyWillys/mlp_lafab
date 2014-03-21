@@ -36,6 +36,9 @@ group :development do
 	gem 'better_errors'
 	gem 'jazz_hands'
 	gem 'quiet_assets'
+	# gem in order to avoid refresh of the server and browser
+	gem 'guard'
+	gem 'guard-livereload'
 end
 
 
@@ -44,6 +47,8 @@ gem 'haml'
 gem 'simple_form'
 gem 'devise'
 gem 'acts-as-taggable-on'
+
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'

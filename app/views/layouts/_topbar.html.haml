@@ -1,0 +1,17 @@
+%nav.top-bar{"data-topbar" => ""}
+  %ul.title-area
+    %li.name
+      %h1
+        %a{href: "#"} La frabique
+    %li.toggle-topbar.menu-icon
+      %a{href: "#"} Men
+  %section.top-bar-section
+    / Right Nav Section
+    %ul.right
+      %li.active
+      -if current_user
+        =link_to "Log out", destroy_user_session_path, :method => :delete
+      -else
+        =link_to "Log in", user_session_path
+      
+    / Left Nav Section

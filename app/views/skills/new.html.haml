@@ -1,2 +1,5 @@
-%p
-	Decrivez une de vos compétences
+/ %p
+/ 	Decrivez une de vos compétences
+
+= simple_form_for (@skill) do |sk|
+	=sk.input :title , label: "Donnez un nom a votre tag"

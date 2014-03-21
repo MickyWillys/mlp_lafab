@@ -1,4 +1,6 @@
 MlpLafab::Application.routes.draw do
+  resources :skills
+
   devise_for :users
   resources :users
   get "static_pages/home"

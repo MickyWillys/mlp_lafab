@@ -2,6 +2,6 @@
 / 	Decrivez une de vos compétences
 
 = simple_form_for (@skill) do |sk|
-	= sk.input :title , label: "Donnez un nom a votre compétence", placeholder: "préparation de buffet pour banquet"
-	= sk.input :tag_list, label: "Donnez des tags a votre competences.", placeholder: "cuisine, reception, traiteur"
+	= sk.input :title , label: "Donnez un nom a votre compétence", placeholder: "ex: préparation de buffet pour banquet"
+	= sk.input :tag_list, label: "Donnez des tags a votre competences.", placeholder: "ex: cuisine, reception, traiteur"
 	= sk.submit

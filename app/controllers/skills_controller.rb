@@ -3,14 +3,16 @@ class SkillsController < ApplicationController
 	def new
 		# Attribution de l'user_id à la skill
 		# Nb ON DOIT ETRE CONNECTE
-		@user= current_user
 		@skill= Skill.new
-		@skill.update_attributes(user_id: @user.id)
 	end
 
 
-	def update
+	def create
+		
 		@skill = Skill.create(skill_params)
+		@user = current_user
+		@skill.update_attributes(user_id: @user.id )
+		binding.pry
 		if @skill.save
 			flash[:success] = "skills sauvegardées!"
 			redirect_to root_url

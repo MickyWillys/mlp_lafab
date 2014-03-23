@@ -78,6 +78,7 @@ GEM
     foundation-rails (5.2.0.0)
       railties (>= 3.1.0)
       sass (>= 3.2.0)
+    geocoder (1.1.9)
     grit (2.5.0)
       diff-lcs (~> 1.1)
       mime-types (~> 1.15)
@@ -229,6 +230,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   devise
   foundation-rails
+  geocoder
   guard
   guard-livereload
   haml

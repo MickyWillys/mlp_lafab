@@ -14,7 +14,7 @@ class SkillsController < ApplicationController
 		@skill.update_attributes(user_id: @user.id )
 		binding.pry
 		if @skill.save
-			flash[:success] = "skills sauvegardées!"
+			flash[:success] = "compétences enregistrées!"
 			redirect_to root_url
 		else
 			render 'static_pages/home'

@@ -5,4 +5,13 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
   has_many :skills
   has_one :location
+
+  attr_accessible :status
+
+  private
+
+  	def user_params
+  		require(:user).permit(:status)
+  	end
+
 end

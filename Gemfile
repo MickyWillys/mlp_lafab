@@ -48,6 +48,7 @@ gem 'simple_form'
 gem 'devise'
 gem 'acts-as-taggable-on'
 gem 'geocoder'
+gem 'activeadmin', github: 'gregbell/active_admin'
 
 
 

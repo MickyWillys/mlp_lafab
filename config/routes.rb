@@ -1,4 +1,8 @@
 MlpLafab::Application.routes.draw do
+  get "users/index"
+  get "users/new"
+  get "users/edit"
+  get "users/update"
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   resources :skills

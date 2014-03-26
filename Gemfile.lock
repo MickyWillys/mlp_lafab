@@ -45,6 +45,9 @@ GEM
       tzinfo (~> 0.3.37)
     acts-as-taggable-on (3.0.2)
       rails (>= 3, < 5)
+    annotate (2.6.2)
+      activerecord (>= 2.3.0)
+      rake (>= 0.8.7)
     arbre (1.0.1)
       activesupport (>= 3.0.0)
     arel (4.0.2)
@@ -275,6 +278,7 @@ PLATFORMS
 DEPENDENCIES
   activeadmin!
   acts-as-taggable-on
+  annotate
   better_errors
   coffee-rails (~> 4.0.0)
   devise

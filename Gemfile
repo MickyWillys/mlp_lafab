@@ -39,6 +39,7 @@ group :development do
 	# gem in order to avoid refresh of the server and browser
 	gem 'guard'
 	gem 'guard-livereload'
+	gem 'annotate'
 end
 
 
@@ -53,6 +54,7 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 
 #gem in order to send email
 gem 'sendgrid'
+
 
 
 

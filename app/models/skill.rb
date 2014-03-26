@@ -1,4 +1,4 @@
 class Skill < ActiveRecord::Base
-	has_one :user
+	belongs_to :user
 	acts_as_taggable
 end

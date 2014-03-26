@@ -51,6 +51,9 @@ gem 'geocoder'
 gem 'protected_attributes'
 gem 'activeadmin', github: 'gregbell/active_admin'
 
+#gem in order to send email
+gem 'sendgrid'
+
 
 
 # Use ActiveModel has_secure_password

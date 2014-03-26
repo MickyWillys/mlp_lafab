@@ -10,6 +10,8 @@
  *
  *= require_self
  *= require foundation_and_overrides
+ *= require static_pages.css.scss
+ *= require landing.css.scss
 
- *= require_tree .
+
  */

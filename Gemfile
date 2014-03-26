@@ -49,7 +49,7 @@ gem 'simple_form'
 gem 'devise'
 gem 'acts-as-taggable-on'
 gem 'geocoder'
-gem 'protected_attributes'
+
 gem 'activeadmin', github: 'gregbell/active_admin'
 
 #gem in order to send email

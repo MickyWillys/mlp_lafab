@@ -13,6 +13,8 @@ ActiveAdmin.register User do
   #  permitted << :other if resource.something?
   #  permitted
   # end
+
+  #Parmetres et leur gestion a faire
   
   permit_params :status
   

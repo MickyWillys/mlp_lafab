@@ -39,6 +39,7 @@ group :development do
 	# gem in order to avoid refresh of the server and browser
 	gem 'guard'
 	gem 'guard-livereload'
+	gem 'annotate'
 end
 
 
@@ -49,6 +50,7 @@ gem 'devise'
 gem 'acts-as-taggable-on'
 gem 'geocoder'
 gem 'activeadmin', github: 'gregbell/active_admin'
+
 
 
 

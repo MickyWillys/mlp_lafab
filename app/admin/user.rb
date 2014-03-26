@@ -14,10 +14,7 @@ ActiveAdmin.register User do
   #  permitted
   # end
 
-<<<<<<< .merge_file_HoyXfl
-=======
   #Parmetres et leur gestion a faire
->>>>>>> .merge_file_rLylul
   
   permit_params :status
   

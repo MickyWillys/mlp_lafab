@@ -15,4 +15,6 @@ ActiveAdmin.register User do
   # end
 
   
+  permit_params :status
+  
 end

@@ -14,6 +14,7 @@ ActiveAdmin.register Skill do
   #  permitted << :other if resource.something?
   #  permitted
   # end
+<<<<<<< .merge_file_QZttXX
 
 
       def view
@@ -21,4 +22,9 @@ ActiveAdmin.register Skill do
       end
     
    
+=======
+ 
+  permit_params :title, :user_id
+ 
+>>>>>>> .merge_file_BwrDPR
 end

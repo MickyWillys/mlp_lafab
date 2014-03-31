@@ -1,5 +1,11 @@
 To Do
-1. Create an administrator and a moderator role
+1. Create an administrator and a moderator role (done)
+
 2. Send a mail to the new registred fabricant to notice him the procedure to become a Fabricant
+	
+	-Quelle option est la meilleure?
+		sendgrid/ mailer / mailchimp
+
+
 3. Create a map with the different kind of fabricant
 4. Prepare a page to show a fully updated skills, and how it will be sell to the company (to be designed)

@@ -3,5 +3,6 @@ class StaticPagesController < ApplicationController
   end
 
   def landing
+  	@skill = Skill.new
   end
 end

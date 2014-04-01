@@ -2,20 +2,16 @@ class SkillsController < ApplicationController
 	
 	def new
 		# Attribution de l'user_id à la skill
-		# Nb ON DOIT ETRE CONNECTE
-		@skill= Skill.new
+		# Nb ON DOIT ETRE CONNECTE 
+		@skill = Skill.new
 	end
 
 
 	def create
-		
 		@skill = Skill.create(skill_params)
-		@user = current_user
-		@skill.update_attributes(user_id: @user.id )
-		binding.pry
 		if @skill.save
 			flash[:success] = "compétences enregistrées!"
-			redirect_to root_url
+			redirect_to new_user_registration_path
 		else
 			render 'static_pages/home'
 		end

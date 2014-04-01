@@ -1,0 +1,10 @@
+/ %p
+/ 	Decrivez une de vos compétences
+
+#myModal.reveal-modal{"data-reveal" => ""}
+	= simple_form_for(@skill) do |sk|
+		= sk.input :title , label: "Donnez un nom a votre compétence", placeholder: "ex: préparation de buffet pour banquet"
+		= sk.input :tag_list, label: "Donnez des tags a votre competences.", placeholder: "ex: cuisine, reception, traiteur"
+		= sk.submit 'Ajouter'
+%a.close-reveal-modal
+
